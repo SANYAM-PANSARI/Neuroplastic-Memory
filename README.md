@@ -127,7 +127,7 @@ PATHFINDER_MODEL=ollama/llama3                  # Local
 | Database | Role | Data |
 |----------|------|------|
 | **Neo4j** | Graph structure | Nodes, edges, learned shortcuts, traversal metadata |
-| **Qdrant** | Vector search | 3072-dim embeddings (HNSW index), shortcut vectors |
+| **Qdrant** | Vector search | Embeddings (HNSW index), shortcut vectors |
 | **SQLite** | Text storage | Full text payloads, provenance, drift scores |
 
 ### 🔒 Anti-Hallucination
@@ -148,7 +148,7 @@ All settings are managed via `.env` (see [.env.example](.env.example)):
 | `PATHFINDER_MODEL` | `gemini/gemini-3.1-flash-lite` | Model for graph navigation decisions |
 | `SUMMARIZER_MODEL` | `gemini/gemini-3.1-flash-lite` | Model for text summarization |
 | `VERIFIER_MODEL` | `gemini/gemini-3.1-flash-lite` | Model for anti-hallucination verification |
-| `EMBEDDING_MODEL` | `gemini/gemini-embedding-2` | Embedding model (3072-dim, supports local models too) |
+| `EMBEDDING_MODEL` | `gemini/gemini-embedding-2` | Embedding model (supports local models too) |
 | `NEO4J_URI` | `bolt://localhost:7687` | Neo4j connection |
 | `QDRANT_URL` | `http://localhost:6333` | Qdrant connection |
 | `SQLITE_PATH` | `./data/memory.db` | SQLite database path |
