@@ -1,0 +1,51 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
+
+# Data (re-generated on each machine)
+data/
+*.db
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# AI tool configs (development-only)
+CLAUDE.md
+CONTINUATION.md
+.agent/
+
+# Development artifacts (not part of the framework)
+brain_artifacts/
+browser/
+
+# Temporary files
+tmp_*
+*.resolved
+*.resolved.*
+
+# Presentation / hackathon files (not part of the framework)
+*.pptx
+*.pdf
+fill_ppt.py
+
+# Separate projects in this directory
+SAIR_Distillation/
+
+# Generated images in root (originals in docs/img/)
+/architecture_diagram.png
+/positioning_matrix.png
+/three_numbers.png
+/cost_decay_chart.png
+/query_pipeline.png
+/nasscom*
