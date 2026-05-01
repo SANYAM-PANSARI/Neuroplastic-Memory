@@ -118,9 +118,9 @@ Queries exit at the cheapest possible level. A mature graph handles most queries
 ### 🔌 Provider Agnostic
 All LLM calls route through [LiteLLM](https://github.com/BerriAI/litellm). Switch between Gemini, Claude, GPT, or local models by changing a single `.env` variable:
 ```bash
-PATHFINDER_MODEL=gemini/gemini-2.5-flash-preview-05-20  # Google
-PATHFINDER_MODEL=anthropic/claude-sonnet-4-20250514    # Anthropic
-PATHFINDER_MODEL=ollama/llama3                 # Local
+PATHFINDER_MODEL=gemini/gemini-3.1-flash-lite   # Google
+PATHFINDER_MODEL=anthropic/claude-opus-4.7      # Anthropic
+PATHFINDER_MODEL=ollama/llama3                  # Local
 ```
 
 ### 🗄️ Tri-Storage Architecture
@@ -145,10 +145,10 @@ All settings are managed via `.env` (see [.env.example](.env.example)):
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `GEMINI_API_KEY` | — | Required. API key for LLM provider |
-| `PATHFINDER_MODEL` | `gemini/gemini-2.5-flash-preview-05-20` | Model for graph navigation decisions |
-| `SUMMARIZER_MODEL` | `gemini/gemini-2.5-flash-preview-05-20` | Model for text summarization |
-| `VERIFIER_MODEL` | `gemini/gemini-2.5-flash-preview-05-20` | Model for anti-hallucination verification |
-| `EMBEDDING_MODEL` | `gemini/text-embedding-005` | Embedding model (supports local models too) |
+| `PATHFINDER_MODEL` | `gemini/gemini-3.1-flash-lite` | Model for graph navigation decisions |
+| `SUMMARIZER_MODEL` | `gemini/gemini-3.1-flash-lite` | Model for text summarization |
+| `VERIFIER_MODEL` | `gemini/gemini-3.1-flash-lite` | Model for anti-hallucination verification |
+| `EMBEDDING_MODEL` | `gemini/gemini-embedding-2` | Embedding model (3072-dim, supports local models too) |
 | `NEO4J_URI` | `bolt://localhost:7687` | Neo4j connection |
 | `QDRANT_URL` | `http://localhost:6333` | Qdrant connection |
 | `SQLITE_PATH` | `./data/memory.db` | SQLite database path |
